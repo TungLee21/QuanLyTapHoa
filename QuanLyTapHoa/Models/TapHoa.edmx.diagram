@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cfd501fc399b4db5a275844e66926550" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.BangGia" Width="1.5" PointX="12.375" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.ChiTietBangGia" Width="1.5" PointX="9.625" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.ChiTietHoaDon" Width="1.5" PointX="10.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.ChiTietPhieuNhapHang" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.ChiTietPhieuTraHang" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.DonViTinh" Width="1.5" PointX="6.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.HangHoa" Width="1.5" PointX="8.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.HoaDon" Width="1.5" PointX="12.375" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.NhaCungCap" Width="1.5" PointX="5.375" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.PhieuNhapHang" Width="1.5" PointX="2.375" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.PhieuTraHang" Width="1.5" PointX="3.875" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.TaiKhoan" Width="1.5" PointX="14.125" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyTapHoaModel.Thue" Width="1.5" PointX="11.875" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietBangGia_BangGia" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietBangGia_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietHoaDon_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietHoaDon_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuNhapHang_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuNhapHang_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuNhapHang_PhieuNhapHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuTraHang_HangHoa" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuTraHang_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_ChiTietPhieuTraHang_PhieuTraHang" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_HangHoa_DonViTinh" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_HangHoa_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_HangHoa_Thue" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyTapHoaModel.FK_HoaDon_TaiKhoan" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<QuanLyTapHoa.Models.ChiTietPhieuTraHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenNhaCungCap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GiaTra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuongTra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HangHoa.TenHangHoa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhaCungCap.TenNhaCungCap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhieuTraHang.MaPhieuTra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenNhaCungCap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GiaTra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuongTra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HangHoa.TenHangHoa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhaCungCap.TenNhaCungCap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhieuTraHang.MaPhieuTra)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

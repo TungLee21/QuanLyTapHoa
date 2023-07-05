@@ -1,0 +1,67 @@
+﻿@model QuanLyTapHoa.Models.ChiTietPhieuNhapHang
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutQuanLy.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ChiTietPhieuNhapHang</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNhaCungCap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhaCungCap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaNhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaNhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuongNhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuongNhap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HangHoa.TenHangHoa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HangHoa.TenHangHoa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaCungCap.TenNhaCungCap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaCungCap.TenNhaCungCap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhieuNhapHang.MaPhieuNhap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhieuNhapHang.MaPhieuNhap)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
